@@ -1,0 +1,4 @@
+{
+	"fetch_interval": "10s",
+	"output": "output.json"
+}
