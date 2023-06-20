@@ -1,0 +1,27 @@
+[
+	{
+		"activity": "Go for a walk",
+		"type": "relaxation",
+		"price": 0
+	},
+	{
+		"activity": "Volunteer at a local animal shelter",
+		"type": "charity",
+		"price": 0.1
+	},
+	{
+		"activity": "Catch up with a friend over a lunch date",
+		"type": "social",
+		"price": 0.2
+	},
+	{
+		"activity": "Patronize a local independent restaurant",
+		"type": "recreational",
+		"price": 0.2
+	},
+	{
+		"activity": "Write a thank you letter to an influential person in your life",
+		"type": "social",
+		"price": 0
+	}
+]

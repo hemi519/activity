@@ -9,6 +9,7 @@ import (
 type Config struct {
 	FetchInterval string `json:"fetch_interval"`
 	Output        string `json:"output"`
+	BoredAPI      string `json:"bored_api"`
 }
 
 func NewConfig(path string) (*Config, error) {

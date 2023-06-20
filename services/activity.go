@@ -1,13 +1,9 @@
-package data
+package services
 
 import (
 	"encoding/json"
 	"fmt"
 	"net/http"
-)
-
-const (
-	apiURL = "https://www.boredapi.com/api/activity"
 )
 
 type Activity struct {
@@ -16,7 +12,7 @@ type Activity struct {
 	Price    float64 `json:"price"`
 }
 
-func FetchData() (*Activity, error) {
+func FetchData(apiURL string) (*Activity, error) {
 	resp, err := http.Get(apiURL)
 	if err != nil {
 		return nil, fmt.Errorf("failed to fetch data from API: %v", err)
