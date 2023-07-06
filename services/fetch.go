@@ -20,7 +20,7 @@ func StartPeriodicFetching(cfg *config.Config, logger *log.Logger) {
 
 	ticker := time.NewTicker(fetchInterval)
 
-	// Fetch and save data on each tick
+	// Fetch and save data
 	for range ticker.C {
 		err := FetchAndSaveData(cfg)
 		if err != nil {
@@ -31,6 +31,8 @@ func StartPeriodicFetching(cfg *config.Config, logger *log.Logger) {
 	}
 }
 
+// this function is typically used in long-running server applications or daemons
+// that need to handle graceful shutdowns
 func WaitForTerminationSignal() {
 	signals := make(chan os.Signal, 1)
 	signal.Notify(signals, os.Interrupt, syscall.SIGTERM)

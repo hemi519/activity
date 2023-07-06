@@ -24,8 +24,6 @@ func main() {
 	}
 	defer logFile.Close()
 
-	fmt.Println("Application Running.....")
-
 	// Start the periodic data fetching
 	go services.StartPeriodicFetching(cfg, log.New(logFile, "", log.LstdFlags))
 

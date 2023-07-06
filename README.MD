@@ -38,4 +38,4 @@ The Activity Application is a Go program that fetches random activity data from 
 
 ## To Be Noted
 
-- This is not a production ready code. For now this code show cases the task given and in addition to that it has features of dockerization, unit testcase and logging. This can be improved a lot in terms of writing testcases for all functionality
+- This is not a production ready code. It has features of dockerization, unit testcase and logging. This can be improved a lot in terms of writing testcases and logging for all functionality
