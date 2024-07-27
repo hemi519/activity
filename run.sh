@@ -1,2 +1,2 @@
-docker build -t activity .
+docker build -t activity ..
 docker run --name activity_tracker activity
